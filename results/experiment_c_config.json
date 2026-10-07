@@ -1,0 +1,27 @@
+{
+    "sections": [
+        "151507",
+        "151508",
+        "151509",
+        "151510",
+        "151669",
+        "151670",
+        "151671",
+        "151672",
+        "151673",
+        "151674",
+        "151675",
+        "151676"
+    ],
+    "hvg": 3000,
+    "hvg_flavor": "seurat",
+    "graph_neighbors": 3,
+    "clustering": "KMeans",
+    "k_source": "Ground Truth number of clusters",
+    "kmeans_n_init": 20,
+    "random_seed": 42,
+    "STAGATE_embedding_dim": 30,
+    "GraphST_embedding_dim": 64,
+    "SpaGCN_embedding_dim": 50,
+    "SpaGCN_histology": false
+}

@@ -1,0 +1,28 @@
+# Core scientific stack
+numpy==2.3.5
+pandas==2.3.3
+scipy==1.16.3
+scikit-learn==1.8.0
+matplotlib==3.10.8
+seaborn==0.13.2
+tqdm==4.67.1
+
+# Deep learning (ClusterPFN transformer)
+torch==2.10.0
+
+# Single-cell / spatial transcriptomics
+scanpy==1.11.5
+anndata==0.12.10
+scikit-misc==0.5.2          # required for scanpy highly_variable_genes (seurat_v3)
+
+# Graph-based clustering backends used by scanpy (leiden / louvain)
+igraph==0.11.9
+python-igraph==0.11.9
+leidenalg==0.10.2
+louvain==0.8.2
+
+# Spatial-domain encoders (embedding generation / graph statistics notebooks)
+tensorflow==2.20.0          # STAGATE runs on the TF1.x compat graph API
+GraphST==1.1.1
+SpaGCN==1.2.7
+STAGATE @ git+https://github.com/RucDongLab/STAGATE@48ce7f874c83a9f1f68187be00370181261ab7c5

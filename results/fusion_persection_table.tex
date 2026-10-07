@@ -1,0 +1,30 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Per-section ARI for the single encoders (ST = STAGATE, SP = SpaGCN)
+  and their late fusion (Fus), under each clustering head. Best per row in bold.}
+  \label{tab:fusion-persection}
+  \small
+  \setlength{\tabcolsep}{4pt}
+  \begin{tabular}{l ccc ccc ccc}
+    \toprule
+    & \multicolumn{3}{c}{KMeans} & \multicolumn{3}{c}{Louvain} & \multicolumn{3}{c}{ClusterPFN} \\
+    \cmidrule(lr){2-4} \cmidrule(lr){5-7} \cmidrule(lr){8-10}
+    Section & ST & SP & Fus & ST & SP & Fus & ST & SP & Fus \\
+    \midrule
+    151507 & 0.429 & 0.424 & 0.439 & 0.476 & 0.410 & \textbf{0.565} & 0.450 & 0.384 & 0.327 \\
+    151508 & \textbf{0.482} & 0.278 & 0.306 & 0.443 & 0.322 & 0.428 & 0.374 & 0.288 & 0.289 \\
+    151509 & 0.448 & 0.384 & 0.429 & \textbf{0.528} & 0.355 & 0.489 & 0.392 & 0.423 & 0.301 \\
+    151510 & 0.258 & 0.268 & 0.268 & 0.372 & 0.353 & 0.372 & 0.297 & 0.344 & \textbf{0.378} \\
+    151669 & 0.337 & 0.347 & 0.387 & 0.340 & 0.363 & 0.418 & -0.036 & \textbf{0.538} & 0.373 \\
+    151670 & 0.209 & 0.203 & 0.203 & 0.301 & 0.208 & \textbf{0.355} & 0.268 & 0.237 & 0.354 \\
+    151671 & 0.295 & 0.494 & 0.493 & 0.411 & 0.356 & \textbf{0.543} & 0.146 & 0.149 & 0.238 \\
+    151672 & 0.485 & 0.755 & \textbf{0.759} & 0.686 & 0.652 & 0.687 & 0.608 & 0.688 & 0.643 \\
+    151673 & 0.414 & 0.449 & \textbf{0.470} & 0.394 & 0.405 & 0.413 & 0.205 & 0.460 & 0.456 \\
+    151674 & 0.284 & 0.496 & \textbf{0.520} & 0.442 & 0.468 & 0.440 & 0.305 & 0.370 & 0.147 \\
+    151675 & 0.364 & 0.373 & 0.393 & \textbf{0.520} & 0.407 & 0.514 & 0.313 & 0.385 & 0.308 \\
+    151676 & 0.369 & 0.164 & 0.266 & 0.386 & 0.235 & \textbf{0.397} & 0.344 & 0.086 & 0.158 \\
+    \midrule
+    Mean & 0.364 & 0.386 & 0.411 & 0.442 & 0.378 & \textbf{0.468} & 0.306 & 0.363 & 0.331 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
